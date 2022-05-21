@@ -1,0 +1,47 @@
+<mat-toolbar color="primary" md-disable-backdrop>
+        <mat-toolbar-row>
+            <button mat-icon-button>
+                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            </button>
+            <img src="./assets/capier.jpg">
+            <span class="spacer"></span>
+            <mat-select>
+                <mat-option value="Dark" >Dark</mat-option >               
+                <mat-option value="Light">Light</mat-option>         
+            </mat-select>
+            <button mat-raised-button class="account">A</button>
+            <mat-card>
+                <span>admin32022@gmail.com</span><br>
+                <span>Admin</span>
+            </mat-card>
+        </mat-toolbar-row>
+       
+    </mat-toolbar>
+
+<mat-sidenav-container >
+    <mat-sidenav #sidenav md-disable-backdrop >
+        <mat-nav-list class="sidenav1">
+            <button mat-icon-button>
+                <mat-icon >image</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon >people</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon >image</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon >timelapse</mat-icon>
+            </button>
+            <button mat-icon-button>
+                <mat-icon >notifications</mat-icon>
+            </button>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+         <div style="height: 90vh;">
+          <router-outlet></router-outlet>
+        </div> 
+      </mat-sidenav-content>
+</mat-sidenav-container>
+

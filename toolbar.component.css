@@ -1,0 +1,35 @@
+.spacer{
+    flex: 1 1;
+    float: right;
+}
+mat-select{
+    width: 100px;
+}
+mat-toolbar-row img{
+    width: 150px;
+}
+.account{
+    font-size: larger;
+    border-radius: 70%;
+    height: 50px;
+    width: 50px;
+
+}
+mat-card{
+    margin: 0;
+    padding: 0;
+    height: 60px; 
+    width:auto;
+}
+mat-card span{
+    font-size: 12px;
+}
+.sidenav1{
+    width: 50px;
+    height: 100%;
+    display: block;
+}
+.contents mat-icon{
+    display: block;
+    width: 100%;
+}
